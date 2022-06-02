@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(Norse-Bold.otf);
+}
+
+:root{
+    --background-text: white;
+    --background-color: #f9fafb;
+    --form-background-color: white;
+    --form-font-color: black;
+    --form-margin: 45px;
+    --form-content-background: white;
+    --error-color: #d57979;
+    --button-green:#596d48; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: var(--background-color);
+}
+
+.picContainer{
+    
+    box-sizing: border-box;
+    height: 100vh;
+    flex-grow: 3;  
+    background-image: url(photo-1585202900225-6d3ac20a6962.avif);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100% 100%;
+    color: var(--background-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0,0, 0.4);
+    /* margin-top: 240px; */
+}
+
+div> img{
+    display: inline;
+    max-width: 100px;
+}
+div h1{
+    display: inline;
+    font-size: 5rem;
+    font-family: 'Norse';
+}
+
+
+.cardConainter{
+    
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.relativeCard{
+    position: relative;
+    box-sizing: border-box;
+    
+    width: auto;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 3;
+    
+    color: var(--form-font-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.infoText{
+    
+    margin-left: var(--form-margin);
+    max-width: 60rem;
+    overflow-wrap: break-word;
+    font-size: 2rem;
+}
+.form-card{
+    background-color: var(--form-content-background);
+    box-shadow: 0px 5px 5px rgb(46, 46, 49);
+    padding: var(--form-margin);
+    min-height: 25vh;
+    margin-bottom: 40px;
+}
+button{
+    margin-left: var(--form-margin);
+    max-width: 50px;
+}
+
+form{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.formTitle{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.input-display{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+input{
+    appearance: none;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    width: 500px;
+    background-color: var(--form-content-background)!important;
+    padding: 10px;
+    border: 2px solid lightgrey ; 
+    border-radius: 6px;
+    color: var(--form-font-color);
+    ;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  
+  margin: 0;
+}
+input:focus{
+   outline: none !important;
+    border-color: #6888e3;
+    box-shadow: 0 0 10px #6888e3;
+    border: 1px solid #6888e3;
+}
+
+.inputBox{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: max(50%, 400px);
+}
+
+.row1, .row2, .row3{
+    display: flex;
+    gap: 40px;
+}
+.row1, .row2{
+    margin-bottom: 15px;
+}
+.row3{
+    margin-bottom: 0px;
+}
+
+.insert{
+    margin: 0px;
+    color: var(--error-color);
+}
+
+h2{
+    margin: 0px;
+}
+
+button{
+    border: none;
+    font-weight: bold;
+    color: var(--background-color);
+    appearance: none;
+    background-color: var(--button-green);
+    min-width: 300px;
+    height: 75px;
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;  
+    margin-bottom: 20px;
+}
+
+button:active{
+    background-color: #6e845b;   
+}
+
+.logInChecker{
+    margin-left: var(--form-margin);
+}
+
+a{
+    text-decoration: none;
+    color: var(--button-green);
+}
